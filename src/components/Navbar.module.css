@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+} 
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0 4px;
+    margin: auto;  
+}
+.mainNav {
+    display: flex; 
+}
+.mainNav .textLink {
+    text-decoration: none;
+    color: #717171;
+    margin: 0 8px;
+}
+.moremenu img {
+    margin-right: -4px;
+    width: 14px;
+
+}
+.icons {
+    margin-left: 80px;
+}
+.icons button {
+    margin: 3px;
+    border: none;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    position: relative;
+}
+.icons:last-child .userIcon {
+    width: 40px;
+}
+button img {
+    position: absolute;
+    left: 6px;
+}
+.userIcon {
+    position: relative;
+}
+.userIcon .user {
+    position: absolute;
+    left: 17px;
+}
+.userIcon .arrow {
+    position: absolute;
+    left: 2px;
+    top: 9px;
+    width: 14px;
+}
+.logoicon img {
+    margin-right: 80px;
+}
+.container ul ul {
+    display: none;
+}
+.mainNav li:hover .textLink {
+    color: #417F56;
+    border-bottom: 2px solid #417F56 ;
+} 
+.moremenu {
+    display: flex;
+    position: relative;
+
+}
+.moremenu ul {
+    border: 1px solid #eeeeee;
+    background-color: #fff;
+    border-radius: 6px;
+    width: 144px;
+    height: 160px;
+    margin-top: 50px;
+    z-index: 101;
+}
+.moremenu .listmenu1 {
+    position: absolute;
+    left: 7px;
+}
+.moremenu .listmenu2 {
+    position: absolute;
+}
+.moremenu .textmenu{
+    text-decoration: none;
+    color: #717171;
+    font-size: 15px;
+    font-weight: lighter;   
+}
+.moremenu li {
+    line-height: 2.2rem;
+    border-bottom: 1px solid #eeeeee;
+    margin: 2px 3px;
+}
+.moremenu li:last-child {
+    border-bottom: none;
+}
+
+.hambergerMenu {
+    display: none;
+    margin-right: 50px;
+    position: relative;
+
+}
+.close {
+    display: none;
+}
+@media (max-width: 1200px) {
+    .container {
+        width: auto;
+    }
+}
+@media (max-width: 990px) {
+    .mainNav li {
+        font-size: 15px;
+    }
+}
+@media (max-width: 768px) {
+    .Navbar {
+        position: fixed;
+        top: 0;
+        height: 100vh;
+        width: 100%;
+        z-index: 120;
+    }
+    .mainNav {
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        width: 100%;
+        padding: 10px;
+        background-color: rgb(147, 221, 147);
+        font-size: small;
+        position: absolute;
+        z-index: 120;
+    }
+    .navIcon{
+        height: 150px;
+        width: 100%;
+        background-image: url('./images/Footer.png');
+    }
+    .logo {
+        margin-right: 20px;
+        margin-top: 10px;
+    }
+    .icons button:first-child {
+        display: none;
+
+    }
+    .hambergerMenu {
+        display: block;
+    } 
+}
