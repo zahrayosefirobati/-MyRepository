@@ -1,8 +1,9 @@
-import React from 'react';
-import styles from './Cart.module.css';
+import React from "react";
+import styles from "./Cart.module.css";
+import { ArrowLeft } from "./icons/arrowLeft";
 
 
-function Cart({image, name, paragraph, dokmeh, icon}) {
+function Cart(image, name, paragraph, dokmeh, icon) {
     return (
         <div className={styles.container}>
             <img src={image} alt='restoran'/>
@@ -10,13 +11,12 @@ function Cart({image, name, paragraph, dokmeh, icon}) {
             <p>{paragraph}</p>
             <div className={styles.items}>
                <div className='dookmeh'>
-                    <span>
-                       {dokmeh}
-                    </span>
-                    <div className="arrowLeft">
-                       {icon}
-                    </div>
+                <span>
+                    {dokmeh}
+                </span>
                     
+                    {icon}
+                   
                </div>
 
             </div>
