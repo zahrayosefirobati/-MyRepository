@@ -14,9 +14,9 @@ function App() {
         <Banner />
         <Cards />
         <Text />
-        <Carts /> 
+        <Carts />
         <Txt />
-    </div> 
+    </div>
   )
 }
 

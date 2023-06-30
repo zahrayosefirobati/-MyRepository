@@ -1,22 +1,50 @@
-import React from 'react';
-import styles from './Carts.module.css';
-import Cart from './Cart';
-import image_1 from './images/image11.png';
-import image_2 from './images/image22.png';
-import image_3 from './images/image33.png';
-import image_4 from './images/image44.png';
-import { ArrowLeft } from './icons/arrowLeft';
+import React from "react";
+import styles from "./Carts.module.css";
+import Cart from "./Cart";
+const cartsData = [
+  {
+    image: "./images/image11.png",
+    name: "شعبه ونک",
+    paragraph: "میدان ونک، خیابان فردوسی، نبش کوچه نیلوفر، پلاک ۲۶",
+    dokmeh: "صفحه شعبه",
+  },
+  {
+    image: "./images/image22.png",
+    name: "شعبه اقدسیه",
+    paragraph: "خیابان اقدسیه ، نرسیده به میدان خیام، پلاک ۸",
+    dokmeh: "صفحه شعبه",
+  },
+  {
+    image: "./images/image33-nam.png",
+    name: "شعبه چالوس",
+    paragraph:
+      "چالوس، خیابان ۱۷ شهریور، بعد کوچه کوروش، جنب داروخانه دکتر میلانی",
+    dokmeh: "صفحه شعبه",
+  },
+  {
+    image: "./images/image44.png",
+    name: "شعبه اکباتان",
+    paragraph: "شهرک اکباتان، فاز ۳، مجتمع تجاری کوروش، طبقه سوم",
+    dokmeh: "صفحه شعبه",
+  },
+];
 
 function Carts() {
-    return (
-        <div className={styles.container}>
-            <Cart image={image_1} name='شعبه ونک' paragraph='میدان ونک، خیابان فردوسی، نبش کوچه نیلوفر، پلاک ۲۶' dokmeh='صفحه شعبه' icon={<ArrowLeft />} />
-            <Cart image={image_2} name='شعبه اقدسیه' paragraph='خیابان اقدسیه ، نرسیده به میدان خیام، پلاک ۸' dokmeh='صفحه شعبه' icon={<ArrowLeft />} />
-            <Cart image={image_3} name='شعبه چالوس' paragraph='چالوس، خیابان ۱۷ شهریور، بعد کوچه کوروش، جنب داروخانه دکتر میلانی' dokmeh='صفحه شعبه' icon={<ArrowLeft />} />
-            <Cart image={image_4} name='شعبه اکباتان' paragraph='شهرک اکباتان، فاز ۳، مجتمع تجاری کوروش، طبقه سوم' dokmeh='صفحه شعبه' icon={<ArrowLeft />} />
-
-        </div>
-    )
+  return (
+    <div className={styles.container}>
+      {cartsData.map((cart) => {
+        return (
+          <Cart
+            key={cart.name}
+            image={cart.image}
+            name={cart.name}
+            dokmeh={cart.dokmeh}
+            paragraph={cart.paragraph}
+          />
+        );
+      })}
+    </div>
+  );
 }
 
 export default Carts;
