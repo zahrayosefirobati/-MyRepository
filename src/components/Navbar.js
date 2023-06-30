@@ -1,9 +1,3 @@
-// import { AiOutlineSearch } from "react-icons/ai";
-// import { AiOutlineShoppingCart } from "react-icons/ai";
-// import { AiOutlineUser } from "react-icons/ai";
-// import { AiOutlineDown } from "react-icons/ai";
-// import { AiOutlineMenu } from "react-icons/ai";
-// import { AiOutlineClose } from "react-icons/ai";
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Navbar.module.css';
@@ -14,6 +8,7 @@ import { User } from './icons/user';
 import { ArrowDown } from './icons/arrowDown';
 import { Menu } from './icons/menu';
 import { Close } from './icons/close';
+
 function Navbar() {
     const[isOpen, setIsOpen] = useState(false);
 

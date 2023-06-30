@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './Cart.module.css';
 
 
-function Cart(image, name, paragraph, dokmeh, icon) {
+function Cart({image, name, paragraph, dokmeh, icon}) {
     return (
         <div className={styles.container}>
             <img src={image} alt='restoran'/>
@@ -10,12 +10,13 @@ function Cart(image, name, paragraph, dokmeh, icon) {
             <p>{paragraph}</p>
             <div className={styles.items}>
                <div className='dookmeh'>
-                <span>
-                    {dokmeh}
-                </span>
+                    <span>
+                       {dokmeh}
+                    </span>
+                    <div className="arrowLeft">
+                       {icon}
+                    </div>
                     
-                    {icon}
-                   
                </div>
 
             </div>

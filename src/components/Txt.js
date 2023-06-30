@@ -1,9 +1,3 @@
-// import { BiLogoTwitter } from "react-icons/bi";
-// import { BiLogoInstagramAlt } from "react-icons/bi";
-// import { BiLogoTelegram } from "react-icons/bi";
-// import bird from '../assets/icons/par.svg';
-// import instagram from '../assets/icons/egtemaei.svg';
-// import telegram from '../assets/icons/Vector.svg';
 import React from "react";
 import styles from "./Txt.module.css";
 import { Link } from "react-router-dom";
