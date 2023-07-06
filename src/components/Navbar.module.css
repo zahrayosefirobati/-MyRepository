@@ -3,29 +3,37 @@
     padding: 0;
     direction: rtl;
 } 
-.container {
+ .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 20px 0 4px;
-    margin: auto;  
-}
-.mainNav {
-    display: flex; 
-}
-.mainNav .textLink {
+    padding: 20px 90px 8px; 
+    z-index: 15;  
+    
+} 
+ .mainNav {
+    display: flex;
+    white-space: nowrap;
+    z-index: 30;  
+
+    
+} 
+ .mainNav .textLink {
     text-decoration: none;
     color: #717171;
-    margin: 0 8px;
-}
-.moremenu img {
-    margin-right: -4px;
-    width: 14px;
-
-}
+    margin: 0 10px;
+    
+} 
+ .moremenu .arrow {
+    margin-right: -18px;
+    color: #717171;
+    width: 13px;
+    height: 13px;
+} 
 .icons {
-    margin-left: 80px;
+    /* margin-left: 80px; */
+    display: flex;
 }
 .icons button {
     margin: 3px;
@@ -36,40 +44,50 @@
     position: relative;
 }
 .icons:last-child .userIcon {
-    width: 40px;
+    width: 43px;
 }
 button img {
     position: absolute;
     left: 6px;
+    top: 20px;
 }
 .userIcon {
     position: relative;
+    padding: 4px;
 }
 .userIcon .user {
     position: absolute;
-    left: 17px;
+    right: 3px;
+    top: 2px;
+    width: 25px;
+    height: 20px;
+
 }
-.userIcon .arrow {
+.userIcon .arrowIcon {
     position: absolute;
     left: 2px;
     top: 9px;
     width: 14px;
 }
-.logoicon img {
-    margin-right: 80px;
+.iconSearch {
+    padding: 4px;
 }
+.iconShop{
+    padding: 4px;
+}
+
 .container ul ul {
     display: none;
-}
+} 
 .mainNav li:hover .textLink {
     color: #417F56;
     border-bottom: 2px solid #417F56 ;
 } 
-.moremenu {
+ .moremenu {
     display: flex;
     position: relative;
 
-}
+} 
 .moremenu ul {
     border: 1px solid #eeeeee;
     background-color: #fff;
@@ -78,38 +96,29 @@ button img {
     height: 160px;
     margin-top: 50px;
     z-index: 101;
-}
-.moremenu .listmenu1 {
+} 
+ .moremenu .listmenu1 {
     position: absolute;
     left: 7px;
 }
 .moremenu .listmenu2 {
     position: absolute;
-}
-.moremenu .textmenu{
+} 
+ .moremenu .textmenu{
     text-decoration: none;
     color: #717171;
     font-size: 15px;
     font-weight: lighter;   
-}
+} 
+
 .moremenu li {
     line-height: 2.2rem;
     border-bottom: 1px solid #eeeeee;
     margin: 2px 3px;
-}
-.moremenu li:last-child {
+} 
+ .moremenu li:last-child {
     border-bottom: none;
-}
-
-.hambergerMenu {
-    display: none;
-    margin-right: 50px;
-    position: relative;
-
-}
-.close {
-    display: none;
-}
+} 
 @media (max-width: 1200px) {
     .container {
         width: auto;
@@ -121,32 +130,30 @@ button img {
     }
 }
 @media (max-width: 768px) {
-    .Navbar {
+    .container {
         position: fixed;
         top: 0;
+        right: 0;
         height: 100vh;
         width: 100%;
-        z-index: 120;
+        background-color: rgb(187, 223, 187);
+        transform: ${(props) => (props.open ? )};
+
     }
     .mainNav {
         display: flex;
         flex-direction: column;
-        /* align-items: center; */
-        width: 100%;
-        padding: 10px;
-        background-color: rgb(147, 221, 147);
+        padding: 5px;
         font-size: small;
         position: absolute;
-        z-index: 120;
+        top:10px;
+        right:300px;   
+        
     }
-    .navIcon{
-        height: 150px;
-        width: 100%;
-        background-image: url('./images/Footer.png');
-    }
-    .logo {
-        margin-right: 20px;
-        margin-top: 10px;
+    .logo img {
+      position: absolute;
+      top:10px;
+      right: 150px;
     }
     .icons button:first-child {
         display: none;
@@ -156,3 +163,4 @@ button img {
         display: block;
     } 
 }
+

@@ -1,6 +1,5 @@
 *{
-    box-sizing: border-box; 
-    
+    box-sizing: border-box;  
  
  }
  
@@ -35,7 +34,7 @@
  }
  
  .itemsInput2 input {
-     margin-top: 52px;
+     margin-top: 59px;
      width: 270px;
      height: 140px;
      margin-bottom: 20px;
@@ -47,6 +46,7 @@
  }
  .itemsInput2:last-child button {
      width: 200px;
+     height: 40px;
      background: none; 
      border-radius: 7px;
      border: 1px solid #6c6767;

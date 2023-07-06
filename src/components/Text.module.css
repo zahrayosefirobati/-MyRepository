@@ -2,6 +2,7 @@
 .container {
     background: url(./images/Footer.png);
     background-attachment: fixed;
+    /* background-repeat: no-repeat; */
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -38,6 +39,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
 
 }
 .textcontainer .buttonhandler {
@@ -82,4 +84,26 @@ div .buttonhandler:last-child {
     width: 18px;
     height: 15px;
 }
+.item_1 .userIcon {
+    width: 50px;
+    height: 50px;
+    color: #fff;
+}
+.item_2 .chartIcon {
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    
+}
+.item_3 .homeIcon {
+    width: 50px;
+    height: 50px;
+    color: #fff;
+
+}
+.item_4 .scheduleIcon {
+    width: 50px;
+    height: 50px;
+    color: #fff;
+} 
 

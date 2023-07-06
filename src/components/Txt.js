@@ -7,12 +7,19 @@ import { Folder } from './icons/folder';
 import SignUp from "./SignUp";
 
 function Txt() {
+  const innerStyle = {
+    width:'80px',
+    height:'50px',
+    display: 'flex',
+    justifycontent: 'center',
+    alignitems: 'center',
+  }
   return (
     <div className={styles.container}>
       <div className={styles.items}>
         <div>
           <p>دسترسی آسان</p>
-          <ul>
+          <ul className="list-ul1">
             <li>
               <Link className={styles.link} to="/">
                 پرسش های متداول
@@ -29,16 +36,18 @@ function Txt() {
               </Link>
             </li>
             <li>
-              <Copy />
-              <Trash />
-              <Folder />
+                 <div style= {innerStyle}>
+                     <Copy />
+                     <Trash />
+                     <Folder />
+                 </div>
               <Link to="/"></Link>
             </li>
           </ul>
         </div>
         <div>
           <p>شعبه های ترخینه</p>
-          <ul>
+          <ul className="list-ul2">
             <li>
               <Link className={styles.link} to="/">
                 شعبه اکباتان

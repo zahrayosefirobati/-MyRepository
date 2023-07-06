@@ -7,6 +7,11 @@ import { Home } from './icons/home';
 import { Schedule } from './icons/schedule';
 
 function Text() {
+    const innerStyle = {
+        width: '18px',
+        height: '15px',
+        color: '#fff',
+    }
     return (
     <div className={styles.container}>
         <div className={styles.textcontainer}>
@@ -17,7 +22,7 @@ function Text() {
             <div>
                 <div className={styles.buttonhandler}>
                     اطلاعات بیشتر
-                    <div className="arrowLeft">
+                    <div style= {innerStyle}>
                          <ArrowLeft />
                     </div>
                 </div>
@@ -26,19 +31,19 @@ function Text() {
 
         <div className={styles.container_icon}>
             <div className={styles.item_1}>
-                <User />
+                <div className={styles.userIcon}><User /></div>
                 <p>پرسنلی مجرب و حرفه‌ای</p>
             </div>
             <div className={styles.item_2}>
-                <Chart />
+               <div className={styles.chartIcon}><Chart /></div> 
                 <p>کیفیت بالای غذاها</p>
             </div>
             <div className={styles.item_3}>
-                <Home />
+            <div className={styles.homeIcon}><Home /></div>
                 <p>محیطی دلنشین و آرام</p>
             </div>
             <div className={styles.item_4}>
-                <Schedule />
+            <div className={styles.scheduleIcon}><Schedule /></div>
                 <p>منوی متنوع</p>
             </div>
 

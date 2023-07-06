@@ -15,7 +15,7 @@ const cartsData = [
     dokmeh: "صفحه شعبه",
   },
   {
-    image: "./images/image33-nam.png",
+    image: "./images/image33.png",
     name: "شعبه چالوس",
     paragraph:
       "چالوس، خیابان ۱۷ شهریور، بعد کوچه کوروش، جنب داروخانه دکتر میلانی",
@@ -28,7 +28,6 @@ const cartsData = [
     dokmeh: "صفحه شعبه",
   },
 ];
-
 function Carts() {
   return (
     <div className={styles.container}>
@@ -38,8 +37,8 @@ function Carts() {
             key={cart.name}
             image={cart.image}
             name={cart.name}
-            dokmeh={cart.dokmeh}
             paragraph={cart.paragraph}
+            dokmeh={cart.dokmeh}
           />
         );
       })}
