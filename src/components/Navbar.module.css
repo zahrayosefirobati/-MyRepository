@@ -137,7 +137,8 @@ button img {
         height: 100vh;
         width: 100%;
         background-color: rgb(187, 223, 187);
-        transform: ${(props) => (props.open ? )};
+        
+    
 
     }
     .mainNav {

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import styles from "./Navbar.module.css";
 import Logo from "./images/Logo.png";
@@ -7,9 +7,16 @@ import { Shop } from "./icons/shop";
 import { User } from "./icons/user";
 import { ArrowDown } from "./icons/arrowDown";
 
-function Navbar({open}) {
+function Navbar() {
+  const [open, setOpen] = useState(false);
+
+  const clickHandler = () => {
+    setOpen(!open)
+  };
+  const className = open ? 'container' : '';
+  
   return (
-    <header open={open} className={styles.container}>
+    <header className={className} onClick={clickHandler}>
       <div>
         <img src={Logo} alt="ax" />
       </div>
